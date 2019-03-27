@@ -22,13 +22,11 @@ const llamarAPI = (miUrl) => {
 
 const prepararUrl = (e) => {
     let key = '8e11f356c400d9ab531668301176322e';
-    let miUrl = 'api.openweathermap.org/data/2.5/weather?';
-    // atributo TARGET dentro del DOM, aunque no es necesario, lo dejamos
-    if (e.target.id === 'boton') {
-        let c = ciudad.val();
-        miUrl += 'q=' + c;
-        miUrl += '&APPID=' + key;
-    }
+    let miUrl = 'https://api.openweathermap.org/data/2.5/weather?';
+    let c = ciudad.val();
+    miUrl += 'q=' + c + ',es';
+    miUrl += '&APPID=' + key;
+
     llamarAPI(miUrl);
 
 };
