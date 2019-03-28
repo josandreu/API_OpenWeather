@@ -4,3 +4,15 @@
     font-size: 1.6em;
     color: whitesmoke;
 }
+
+/*
+https://gist.github.com/tbranyen/62d974681dea8ee0caa1
+https://github.com/erikflowers/weather-icons
+Se trata de cambiar los iconos por defecto por los de arriba
+
+Además hacemos un toggle switch, y en función de si está habilitado o no
+que se haga predicción actual (weather en la url) o para las proximas horas (forecast)
+
+habrá que poner un listener al boton de switch.. evento change
+
+*/
