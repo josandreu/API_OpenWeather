@@ -50,6 +50,7 @@ const llamarAPI = (miUrl) => {
     ciudad.val('');
 };
 
+
 const prepararUrl = (e) => {
     let key = '8e11f356c400d9ab531668301176322e';
     let miUrl = 'https://api.openweathermap.org/data/2.5/weather?';
