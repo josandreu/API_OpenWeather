@@ -14,26 +14,37 @@
 <body>
     <div class="container-fluid mt-3">
         <div class="row justify-content-center bg-light p-2 border-top border-bottom">
-            <h1 class="text-dark text-center">Open Weather</h1>
+            <h1 class="text-primary text-center">Open Weather</h1>
         </div>
         <div class="row justify-content-center mt-5">
-            <div class="col-6">
-                <input type="text" id="ciudad" class="form-control" placeholder="Ciudad a consultar">
+            <div class="col-5">
+                <input type="text" id="ciudad" class="form-control" placeholder="Ciudad a consultar" autofocus="">
             </div>
-            <div class="col-4">
+            <div class="col-3">
                 <button class="btn btn-outline-primary form-control" id="boton">
                     Llamar API
                 </button>
             </div>
+            <div class="col-1">
+                <label class="switch" data-toggle="tooltip" data-placement="top" data-html="true"
+                    title="<em>Predicción metereológica para los <b>próximos 3 días</b> <u>pulsando el botón</u></em>">
+                    <input type="checkbox" id="consulta">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
+        <div class="row mt-3 justify-content-center">
+            <div class="col-6" id="contenido">
+            </div>
         </div>
         <div class="row mt-5 justify-content-center">
-            <div class="col-10">
-                <div id="contenido" class="text-center">
-                </div>
+            <div id="contenido2" class="col-12 text-center">
             </div>
         </div>
     </div>
     <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 
